@@ -10,18 +10,14 @@ type LayoutProps = {
 //   variable: "--font-inter",
 // })
 
-// const ptSansCaption = PT_Sans_Caption({
-//   subsets: ["latin"],
-//   weight: ["700"],
-//   variable: "--font-sans",
-// })
-
 export const Layout = ({ children }: LayoutProps) => {
   return (
-    <div className="min-h-screen font-inter">
-      <div className="container mx-auto p-20 relative flex justify-between items-center">
-        <FirstSection />
-        <main>{children}</main>
+    <div className="min-h-screen font-inter bg-blue-900 text-white">
+      <div className="container mx-auto py-20 grid grid-cols-[45%_55%] ">
+        <header className="fixed w-fit">
+          <FirstSection />
+        </header>
+        <main className="col-start-2">{children}</main>
       </div>
     </div>
   )

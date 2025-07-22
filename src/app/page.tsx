@@ -1,5 +1,5 @@
-import { SecondSection } from "../templates/second-section"
+import { SecondSection } from "../components/layout/second-section"
 
-export default function Homepage() {
+export default function Page() {
   return <SecondSection />
 }
