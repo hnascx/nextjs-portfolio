@@ -21,7 +21,7 @@ export default {
         },
         gray: {
           100: "#E5E7EB",
-          200: "#94a3b8",
+          200: "#94A3B8",
         },
       },
       borderRadius: {
@@ -29,14 +29,11 @@ export default {
         md: "calc(0.5rem - 2px)",
         sm: "calc(0.5rem - 4px)",
       },
-      fontFamily: {
-        inter: ["Inter", "sans-serif"],
-      },
       fontSize: {
         // Heading
-        "heading-hg": ["40px", { lineHeight: "120%", fontWeight: "700" }],
-        "heading-xl": ["32px", { lineHeight: "120%", fontWeight: "700" }],
-        "heading-lg": ["28px", { lineHeight: "120%", fontWeight: "700" }],
+        "heading-lg": ["48px", { lineHeight: "100%", fontWeight: "700" }],
+        "heading-md": ["20px", { lineHeight: "175%", fontWeight: "400" }],
+        "heading-sm": ["12px", { lineHeight: "120%", fontWeight: "500" }],
 
         // Body
         "body-md": ["16px", { lineHeight: "150%", fontWeight: "400" }],
