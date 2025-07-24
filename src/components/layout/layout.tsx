@@ -15,7 +15,7 @@ export const Layout = ({ children }: LayoutProps) => {
     <div
       className={`${inter.className} min-h-screen bg-blue-900 text-white`}
     >
-      <div className="container mx-auto py-20 grid grid-cols-[48%_52%] ">
+      <div className="container mx-auto py-23 grid grid-cols-[48%_52%] ">
         <header className="fixed w-fit">
           <FirstSection />
         </header>

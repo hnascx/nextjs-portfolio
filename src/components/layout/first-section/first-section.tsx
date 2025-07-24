@@ -4,12 +4,12 @@ import { Summarize } from "./summarize"
 
 export const FirstSection = () => {
   return (
-    <div className="flex flex-col h-[calc(100vh-10rem)] justify-between">
+    <section className="flex flex-col h-[calc(100vh-11.75rem)] justify-between">
       <div className="flex flex-col gap-20">
         <Summarize />
         <Navigation />
       </div>
       <Social />
-    </div>
+    </section>
   )
 }

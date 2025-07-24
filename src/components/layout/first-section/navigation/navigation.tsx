@@ -9,13 +9,13 @@ type NavItem = {
 }
 
 const navItems: NavItem[] = [
-  { label: "Sobre mim", href: "#about" },
+  { label: "Sobre mim", href: "#background" },
   { label: "Experiência", href: "#experience" },
-  { label: "Projetos", href: "#projects" },
+  { label: "Projetos", href: "#featured-projects" },
 ]
 
 export const Navigation = () => {
-  const [activeItem, setActiveItem] = useState<string>("#about")
+  const [activeItem, setActiveItem] = useState<string>("#background")
 
   return (
     <nav className="flex flex-col gap-6">
@@ -24,17 +24,17 @@ export const Navigation = () => {
           key={item.href}
           href={item.href}
           onClick={() => setActiveItem(item.href)}
-          className={`group flex items-center gap-4 text-heading-sm transition-colors duration-50`}
+          className={`group flex items-center gap-4 text-heading-sm transition-colors duration-100`}
         >
           <div
-            className={`h-[1px] transition-all ${
+            className={`h-[1px] transition-all duration-100 ${
               activeItem === item.href
                 ? "w-16 bg-gray-100"
                 : "w-8 bg-gray-200 group-hover:w-16 group-hover:bg-gray-100"
             }`}
           />
           <span
-            className={`transition-colors tracking-widest uppercase ${
+            className={`transition-colors tracking-widest uppercase duration-100 ${
               activeItem === item.href
                 ? "text-gray-100"
                 : "text-gray-200 group-hover:text-gray-100"

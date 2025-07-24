@@ -9,24 +9,24 @@ type SocialItem = {
 
 const socialItems: SocialItem[] = [
   {
-    href: "https://github.com/hnascx",
-    icon: <Github />,
-    about: "Github",
-  },
-  {
     href: "https://www.linkedin.com/in/hnascx/",
     icon: <Linkedin />,
     about: "LinkedIn",
   },
   {
-    href: "https://www.instagram.com/hnascx/",
-    icon: <Instagram />,
-    about: "Instagram",
+    href: "https://github.com/hnascx",
+    icon: <Github />,
+    about: "Github",
   },
   {
     href: "https://wa.me/5511948275951?text=Olá!%20Vi%20seu%20portfólio%20e%20gostaria%20de%20conversar.",
     icon: <MessagesSquare />,
     about: "WhatsApp",
+  },
+  {
+    href: "https://www.instagram.com/hnascx/",
+    icon: <Instagram />,
+    about: "Instagram",
   },
 ]
 
