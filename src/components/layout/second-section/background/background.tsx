@@ -4,7 +4,7 @@ export const Background = () => {
       <span className="text-gray-100">Com mais de 3 anos de experiência</span>,
       tenho vasto conhecimento no desenvolvimento de soluções escaláveis
       utilizando <span className="text-gray-100">React.js</span>,{" "}
-      <span className="text-gray-100">Next.js</span>,
+      <span className="text-gray-100">Next.js</span>,{" "}
       <span className="text-gray-100">Node.js</span> e{" "}
       <span className="text-gray-100">Nest.js</span>. Entrego projetos alinhados
       ao negócio, com foco em desempenho, design e usabilidade.

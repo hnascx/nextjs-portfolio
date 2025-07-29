@@ -22,6 +22,7 @@ export default {
         gray: {
           100: "#E5E7EB",
           200: "#94A3B8",
+          300: "#64748B",
         },
       },
       borderRadius: {
@@ -36,9 +37,9 @@ export default {
         "heading-sm": ["12px", { lineHeight: "120%", fontWeight: "500" }],
 
         // Body
-        "body-md": ["16px", { lineHeight: "150%", fontWeight: "400" }],
-        "body-sm": ["14px", { lineHeight: "150%", fontWeight: "400" }],
-        "body-xs": ["12px", { lineHeight: "150%", fontWeight: "400" }],
+        "body-md": ["16px", { lineHeight: "150%", fontWeight: "300" }],
+        "body-sm": ["14px", { lineHeight: "150%", fontWeight: "300" }],
+        "body-xs": ["12px", { lineHeight: "150%", fontWeight: "300" }],
 
         // Tags
         "body-tag": ["12px", { lineHeight: "100%", fontWeight: "400" }],
