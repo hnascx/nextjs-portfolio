@@ -47,21 +47,21 @@ export const Experience = ({
   companyLink,
 }: ExperienceProps) => {
   return (
-    <section className="group w-full pr-5">
-      <article className="grid grid-cols-[19%_81%] gap-11 relative cursor-pointer">
-        <div className="absolute -mx-6 -my-5 inset-0 rounded-lg opacity-0 bg-white/4 transition-opacity duration-300 group-hover:opacity-100" />
+    <section className="group">
+      <article className="grid grid-cols-[20%_80%] gap-8 relative cursor-pointer">
+        <div className="absolute inset-0 -ml-6 -mr-9 -my-5 rounded-lg opacity-0 bg-white/4 transition-opacity duration-300 group-hover:opacity-100" />
         <span className="relative text-body-xs font-medium text-gray-300 uppercase mt-1 transition-colors duration-300">
           2024 — Present
         </span>
-        <div className="relative flex flex-col gap-2">
-          <h1 className="inline text-body-md text-gray-100 group-hover:text-cyan-100 transition-colors duration-300">
+        <div className="relative flex flex-col gap-2 w-fit">
+          <h1 className="inline text-body-md text-gray-100 group-hover:text-cyan-100 transition-colors duration-300 w-fit">
             Desenvolvedor React (VTEX IO) · Loungerie
             <ArrowUpRight
               className="inline ml-1.25 translate-y-[2px] group-hover:-translate-y-[3px] group-hover:translate-x-[3px] text-gray-100 group-hover:text-cyan-100 transition-all duration-150 ease-in-out"
               size={15}
             />
           </h1>
-          <p className="text-body-sm text-gray-200 max-w-[90%]">
+          <p className="text-body-sm text-gray-200 max-w-[95%]">
             Desenvolvimento e manutenção de e-commerce utilizando React.js (VTEX
             IO), SCSS e Typescript. Integração com APIs e serviços de back-end.
             Interfaces periódicas com agência externa para processo de deploy de

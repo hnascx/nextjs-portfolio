@@ -13,11 +13,11 @@ const inter = Inter({
 export const Layout = ({ children }: LayoutProps) => {
   return (
     <div className={`${inter.className} min-h-screen bg-blue-900 text-white`}>
-      <div className="container mx-auto py-23 px-4 grid grid-cols-[45%_55%] gap-4">
+      <div className="mx-12 py-23 grid grid-cols-[45%_55%] gap-4">
         <header className="fixed w-fit">
           <FirstSection />
         </header>
-        <main className="col-start-2">{children}</main>
+        <main className="container mx-auto col-start-2">{children}</main>
       </div>
     </div>
   )

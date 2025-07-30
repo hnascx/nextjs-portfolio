@@ -30,7 +30,7 @@ const socialItems: SocialItem[] = [
   },
 ]
 
-export const Social = ({ href, icon, about }: SocialItem) => {
+export const Social = () => {
   return (
     <div className="flex gap-4">
       {socialItems.map((item) => (
