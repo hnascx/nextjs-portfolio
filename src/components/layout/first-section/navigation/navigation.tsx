@@ -18,23 +18,23 @@ export const Navigation = () => {
   const [activeItem, setActiveItem] = useState<string>("#background")
 
   return (
-    <nav className="flex flex-col gap-6">
+    <nav className="flex flex-col">
       {navItems.map((item) => (
         <Link
           key={item.href}
           href={item.href}
           onClick={() => setActiveItem(item.href)}
-          className={`group flex items-center gap-4 text-heading-sm transition-colors duration-100`}
+          className={`group flex items-center gap-4 text-heading-sm transition-colors duration-150 py-3`}
         >
           <div
-            className={`h-[1px] transition-all duration-100 ${
+            className={`h-[1px] transition-all duration-150 ${
               activeItem === item.href
                 ? "w-16 bg-gray-100"
                 : "w-8 bg-gray-200 group-hover:w-16 group-hover:bg-gray-100"
             }`}
           />
           <span
-            className={`transition-colors tracking-widest uppercase duration-100 ${
+            className={`transition-colors tracking-widest uppercase duration-150 ${
               activeItem === item.href
                 ? "text-gray-100"
                 : "text-gray-200 group-hover:text-gray-100"
