@@ -55,7 +55,7 @@ const experiences: ExperienceProps[] = [
 export const Experience = () => {
   return (
     <div className="flex flex-col gap-14">
-      <div className="group/list flex flex-col gap-14">
+      <section className="group/list flex flex-col gap-14">
         {experiences.map((experience) => (
           <Link
             key={experience.title}
@@ -94,21 +94,23 @@ export const Experience = () => {
             </article>
           </Link>
         ))}
-      </div>
-      <Link
-        className="group relative flex flex-col gap-2 w-fit"
-        href="/Currículo - Fullstack.pdf"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        <h1 className="inline text-body-md font-medium text-gray-100 transition-colors duration-200 group-hover:text-cyan-100 w-fit">
-          Ver currículo completo
-          <ArrowUpRight
-            className="inline ml-1.25 translate-y-[1px] transition-transform duration-150 group-hover:-translate-y-[3.5px] group-hover:translate-x-[3.5px] text-gray-100 group-hover:text-cyan-100"
-            size={15}
-          />
-        </h1>
-      </Link>
+      </section>
+      <section>
+        <Link
+          className="group relative flex flex-col gap-2 w-fit"
+          href="/Currículo - Fullstack.pdf"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <h1 className="inline text-body-md font-medium text-gray-100 transition-colors duration-200 group-hover:text-cyan-100 w-fit">
+            Ver currículo completo
+            <ArrowUpRight
+              className="inline ml-1.25 translate-y-[1px] transition-transform duration-150 group-hover:-translate-y-[3.5px] group-hover:translate-x-[3.5px] text-gray-100 group-hover:text-cyan-100"
+              size={15}
+            />
+          </h1>
+        </Link>
+      </section>
     </div>
   )
 }

@@ -1,4 +1,5 @@
 import { Background } from "./background"
+import { EndText } from "./end-text"
 import { Experience } from "./experience"
 import { FeaturedProjects } from "./featured-projects"
 
@@ -8,6 +9,7 @@ export const SecondSection = () => {
       <Background />
       <Experience />
       <FeaturedProjects />
+      <EndText />
     </section>
   )
 }
