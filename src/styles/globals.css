@@ -1,3 +1,23 @@
 @import "tailwindcss";
 
 @config "../../tailwind.config.ts";
+
+html {
+  scroll-behavior: smooth;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(
+    600px circle at var(--mouse-x, 0) var(--mouse-y, 0),
+    rgba(29, 78, 216, 0.15),
+    transparent 80%
+  );
+  pointer-events: none;
+  z-index: 30;
+}

@@ -54,7 +54,7 @@ const experiences: ExperienceProps[] = [
 
 export const Experience = () => {
   return (
-    <div className="flex flex-col gap-14">
+    <div id="experience" className="flex flex-col gap-14 scroll-mt-23.5">
       <section className="group/list flex flex-col gap-14">
         {experiences.map((experience) => (
           <Link

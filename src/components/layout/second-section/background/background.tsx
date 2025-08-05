@@ -1,6 +1,9 @@
 export const Background = () => {
   return (
-    <section className="text-body-md text-gray-200">
+    <section
+      id="background"
+      className="text-body-md text-gray-200 scroll-mt-23.5"
+    >
       <span className="text-gray-100">Com mais de 3 anos de experiência</span>,
       tenho vasto conhecimento no desenvolvimento de soluções escaláveis
       utilizando <span className="text-gray-100">React.js</span>,{" "}

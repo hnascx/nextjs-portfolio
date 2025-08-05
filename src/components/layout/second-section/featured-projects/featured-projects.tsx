@@ -47,7 +47,7 @@ const featuredProjects: FeaturedProjectsProps[] = [
 
 export const FeaturedProjects = () => {
   return (
-    <div className="flex flex-col gap-14">
+    <div id="featured-projects" className="flex flex-col gap-14 scroll-mt-23.5">
       <section className="group/list flex flex-col gap-14">
         {featuredProjects.map((featuredProject) => (
           <Link
