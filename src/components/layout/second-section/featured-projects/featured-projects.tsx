@@ -57,7 +57,7 @@ export const FeaturedProjects = () => {
             rel="noopener noreferrer"
             className="group opacity-100 transition-opacity duration-300 group-hover/list:opacity-40 hover:!opacity-100"
           >
-            <article className="grid grid-cols-[25%_75%] gap-9 relative cursor-pointer">
+            <article className="grid md:grid-cols-[25%_75%] gap-9 relative cursor-pointer">
               <div className="absolute inset-0 -ml-6 -mr-9 -my-5 rounded-lg opacity-0 bg-white/4 border-t border-transparent transition-[opacity,border-color] duration-300 group-hover:opacity-50 group-hover:border-gray-700" />
               <div className="relative mt-1">
                 <Image

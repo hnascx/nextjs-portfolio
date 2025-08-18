@@ -32,7 +32,7 @@ const socialItems: SocialItem[] = [
 
 export const Social = () => {
   return (
-    <div className="flex gap-4">
+    <div className="flex gap-4 mt-8 md:mt-0">
       {socialItems.map((item) => (
         <Link
           key={item.href}

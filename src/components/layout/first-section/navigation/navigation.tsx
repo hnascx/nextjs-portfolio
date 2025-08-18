@@ -18,7 +18,7 @@ export const Navigation = () => {
   const [activeItem, setActiveItem] = useState<string>("#background")
 
   return (
-    <nav className="flex flex-col w-fit">
+    <nav className="hidden lg:flex flex-col w-fit">
       {navItems.map((item) => (
         <Link
           key={item.href}

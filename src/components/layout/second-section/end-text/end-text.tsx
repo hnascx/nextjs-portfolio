@@ -1,6 +1,6 @@
 export const EndText = () => {
   return (
-    <div className="text-body-sm text-gray-300 w-115">
+    <div className="text-body-sm text-gray-300 w-fit md:w-115">
       Codificado com{" "}
       <a
         href="https://www.cursor.com/home"
