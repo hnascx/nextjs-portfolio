@@ -9,7 +9,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className="bg-blue-900">
+      <body className="bg-black">
         <MouseMoveProvider>
           <Layout>{children}</Layout>
         </MouseMoveProvider>

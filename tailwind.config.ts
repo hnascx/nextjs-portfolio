@@ -10,6 +10,9 @@ export default {
       },
     },
     extend: {
+      fontFamily: {
+        poppins: ["var(--font-poppins)", "sans-serif"],
+      },
       colors: {
         blue: {
           900: "#0f172a",
