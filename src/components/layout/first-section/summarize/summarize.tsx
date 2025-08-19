@@ -7,7 +7,7 @@ export const Summarize = () => {
       <h2 className="text-lg md:text-heading-md text-gray-100">
         Desenvolvedor Fullstack
       </h2>
-      <p className="text-body-md text-gray-200 w-fit">
+      <p className="text-body-md text-gray-200 w-fit md:w-[50%] lg:w-[75%]">
         Eu crio aplicações web com foco em performance e usabilidade.
       </p>
     </section>

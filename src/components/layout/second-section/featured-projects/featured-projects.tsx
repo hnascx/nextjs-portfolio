@@ -49,9 +49,9 @@ export const FeaturedProjects = () => {
   return (
     <div
       id="featured-projects"
-      className="flex flex-col gap-9 md:gap-14 scroll-mt-23.5"
+      className="flex flex-col gap-9 lg:gap-14 scroll-mt-23.5"
     >
-      <span className="uppercase text-gray-100 font-medium text-heading-sm text-sm tracking-widest md:hidden">
+      <span className="uppercase text-gray-100 font-medium text-heading-sm text-sm tracking-widest lg:hidden">
         Projetos em destaque
       </span>
       <section className="group/list flex flex-col gap-14">

@@ -1,7 +1,7 @@
 export const Background = () => {
   return (
     <div className="flex flex-col gap-9">
-      <span className="uppercase text-gray-100 font-medium text-heading-sm text-sm tracking-widest md:hidden">
+      <span className="uppercase text-gray-100 font-medium text-heading-sm text-sm tracking-widest lg:hidden">
         Sobre mim
       </span>
       <section
@@ -17,12 +17,8 @@ export const Background = () => {
         alinhados ao negócio, com foco em desempenho, design e usabilidade.
         <br />
         <br />
-        Atualmente, sou{" "}
-        <span className="text-gray-100">
-          Desenvolvedor Fullstack Freelancer
-        </span>
-        . A maioria dos projetos que tenho trabalhado nesse período são com foco
-        em{" "}
+        Atualmente, sou Desenvolvedor Fullstack Freelancer. A maioria dos
+        projetos que tenho trabalhado nesse período são com foco em{" "}
         <span className="text-gray-100">
           desenvolvimento e personalização de e-commerces
         </span>{" "}

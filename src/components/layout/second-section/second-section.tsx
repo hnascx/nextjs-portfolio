@@ -5,7 +5,7 @@ import { FeaturedProjects } from "./featured-projects"
 
 export const SecondSection = () => {
   return (
-    <section className="flex flex-col min-h-screen gap-24 md:gap-36 mt-30 md:mt-0 md:px-7">
+    <section className="flex flex-col min-h-screen gap-24 lg:gap-36 mt-30 lg:mt-0 md:px-7">
       <Background />
       <Experience />
       <FeaturedProjects />

@@ -56,9 +56,9 @@ export const Experience = () => {
   return (
     <div
       id="experience"
-      className="flex flex-col gap-9 md:gap-14 scroll-mt-23.5"
+      className="flex flex-col gap-9 lg:gap-14 scroll-mt-23.5"
     >
-      <span className="uppercase text-gray-100 font-medium text-heading-sm text-sm tracking-widest md:hidden">
+      <span className="uppercase text-gray-100 font-medium text-heading-sm text-sm tracking-widest lg:hidden">
         Experiências
       </span>
       <section className="group/list flex flex-col gap-14">
@@ -103,7 +103,7 @@ export const Experience = () => {
       </section>
       <section>
         <Link
-          className="group relative flex flex-col gap-2 w-fit mt-5 md:mt-0"
+          className="group relative flex flex-col gap-2 w-fit mt-5 md:my-4 lg:mt-0"
           href="/Currículo - Fullstack.pdf"
           target="_blank"
           rel="noopener noreferrer"
