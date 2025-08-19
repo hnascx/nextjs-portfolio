@@ -2,7 +2,7 @@ export const Background = () => {
   return (
     <div className="flex flex-col gap-9">
       <span className="uppercase text-gray-100 font-medium text-heading-sm text-sm tracking-widest md:hidden">
-        About
+        Sobre mim
       </span>
       <section
         id="background"

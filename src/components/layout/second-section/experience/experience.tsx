@@ -54,7 +54,13 @@ const experiences: ExperienceProps[] = [
 
 export const Experience = () => {
   return (
-    <div id="experience" className="flex flex-col gap-14 scroll-mt-23.5">
+    <div
+      id="experience"
+      className="flex flex-col gap-9 md:gap-14 scroll-mt-23.5"
+    >
+      <span className="uppercase text-gray-100 font-medium text-heading-sm text-sm tracking-widest md:hidden">
+        Experiências
+      </span>
       <section className="group/list flex flex-col gap-14">
         {experiences.map((experience) => (
           <Link
@@ -64,8 +70,8 @@ export const Experience = () => {
             rel="noopener noreferrer"
             className="group opacity-100 transition-opacity duration-300 group-hover/list:opacity-40 hover:!opacity-100"
           >
-            <article className="grid md:grid-cols-[25%_75%] gap-9 relative cursor-pointer">
-              <div className="absolute inset-0 -ml-6 -mr-9 -my-5 rounded-lg opacity-0 bg-white/4 border-t border-transparent transition-[opacity,border-color] duration-300 group-hover:opacity-50 group-hover:border-gray-700" />
+            <article className="grid md:grid-cols-[25%_75%] gap-2 md:gap-9 relative cursor-pointer">
+              <div className="absolute inset-0 md:-ml-6 md:-mr-9 -my-5 rounded-lg opacity-0 bg-white/4 border-t border-transparent transition-[opacity,border-color] duration-300 group-hover:opacity-50 group-hover:border-gray-700" />
               <span className="relative text-body-xs font-medium text-gray-300 uppercase mt-1">
                 {experience.workPeriod}
               </span>
@@ -97,7 +103,7 @@ export const Experience = () => {
       </section>
       <section>
         <Link
-          className="group relative flex flex-col gap-2 w-fit"
+          className="group relative flex flex-col gap-2 w-fit mt-5 md:mt-0"
           href="/Currículo - Fullstack.pdf"
           target="_blank"
           rel="noopener noreferrer"

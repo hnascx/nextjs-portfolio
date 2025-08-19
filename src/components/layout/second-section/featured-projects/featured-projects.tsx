@@ -47,7 +47,13 @@ const featuredProjects: FeaturedProjectsProps[] = [
 
 export const FeaturedProjects = () => {
   return (
-    <div id="featured-projects" className="flex flex-col gap-14 scroll-mt-23.5">
+    <div
+      id="featured-projects"
+      className="flex flex-col gap-9 md:gap-14 scroll-mt-23.5"
+    >
+      <span className="uppercase text-gray-100 font-medium text-heading-sm text-sm tracking-widest md:hidden">
+        Projetos em destaque
+      </span>
       <section className="group/list flex flex-col gap-14">
         {featuredProjects.map((featuredProject) => (
           <Link
@@ -57,9 +63,9 @@ export const FeaturedProjects = () => {
             rel="noopener noreferrer"
             className="group opacity-100 transition-opacity duration-300 group-hover/list:opacity-40 hover:!opacity-100"
           >
-            <article className="grid md:grid-cols-[25%_75%] gap-9 relative cursor-pointer">
-              <div className="absolute inset-0 -ml-6 -mr-9 -my-5 rounded-lg opacity-0 bg-white/4 border-t border-transparent transition-[opacity,border-color] duration-300 group-hover:opacity-50 group-hover:border-gray-700" />
-              <div className="relative mt-1">
+            <article className="grid md:grid-cols-[25%_75%] gap-4 md:gap-9 relative cursor-pointer">
+              <div className="absolute inset-0 md:-ml-6 md:-mr-9 -my-5 rounded-lg opacity-0 bg-white/4 border-t border-transparent transition-[opacity,border-color] duration-300 group-hover:opacity-50 group-hover:border-gray-700 hidden md:block" />
+              <div className="relative mt-1 hidden md:block">
                 <Image
                   src={featuredProject.image}
                   alt={featuredProject.title}
@@ -89,6 +95,15 @@ export const FeaturedProjects = () => {
                     </li>
                   ))}
                 </ul>
+              </div>
+              <div className="relative mt-1 block md:hidden">
+                <Image
+                  src={featuredProject.image}
+                  alt={featuredProject.title}
+                  width={1920}
+                  height={1080}
+                  className="rounded-sm border-2 border-gray-800 group-hover:border-2 group-hover:border-gray-600 transition-colors duration-300 w-[60%] md:w-full"
+                />
               </div>
             </article>
           </Link>
