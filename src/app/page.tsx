@@ -1,5 +1,5 @@
-import { SecondSection } from "../components/layout/second-section"
+import { MainContent } from "../components/sections/main-content"
 
 export default function Page() {
-  return <SecondSection />
+  return <MainContent />
 }

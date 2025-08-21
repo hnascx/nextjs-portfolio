@@ -37,14 +37,23 @@ export const EndText = () => {
       >
         Hostinger
       </a>
-      . Todo o texto está escrito na fonte{" "}
+      . Fontes utilizadas:{" "}
       <a
         href="https://rsms.me/inter/"
+        className="text-gray-200 font-normal hover:text-cyan-100 transition-colors duration-200"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        Inter{" "}
+      </a>
+      e{" "}
+      <a
+        href="https://fonts.google.com/specimen/Poppins"
         className="text-gray-200 font-normal  hover:text-cyan-100 transition-colors duration-200"
         target="_blank"
         rel="noopener noreferrer"
       >
-        Inter
+        Poppins
       </a>
       .
     </div>

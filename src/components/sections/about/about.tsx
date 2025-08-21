@@ -1,4 +1,4 @@
-export const Background = () => {
+export const About = () => {
   return (
     <div className="flex flex-col gap-9">
       <span className="uppercase text-gray-100 font-medium text-heading-sm text-sm tracking-widest lg:hidden">

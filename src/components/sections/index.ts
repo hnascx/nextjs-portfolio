@@ -1,0 +1,6 @@
+export * from "./about/about"
+export * from "./end-text/end-text"
+export * from "./experience/experience"
+export * from "./hero/hero"
+export * from "./main-content"
+export * from "./projects/projects"
