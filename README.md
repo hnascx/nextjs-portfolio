@@ -1,36 +1,156 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Next.js Portfolio
 
-## Getting Started
+A modern, performant, and accessible portfolio website built with Next.js 15 and Tailwind CSS 4.
 
-First, run the development server:
+## ✨ Features
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+- **Modern Tech Stack** - Built with Next.js 15, React 19, and Tailwind CSS 4
+- **Performance Optimized** - Lazy loading, image optimization and compression
+- **SEO Ready** - Metadata API, Open Graph, robots.txt, and sitemap
+- **Accessible** - ARIA labels and semantic HTML
+- **Responsive Design** - Mobile-first approach with responsive breakpoints
+- **Security** - Security headers and best practices
+- **TypeScript** - Full type safety and better developer experience
+
+## 🚀 Tech Stack
+
+- **Framework**: Next.js
+- **Styling**: Tailwind CSS
+- **Icons**: Lucide React
+
+## 📁 Project Structure
+
+```
+src/
+├── app/                    # Next.js App Router
+│   ├── layout.tsx         # Root layout with metadata
+│   └── page.tsx           # Home page
+├── components/            # Reusable components
+│   ├── ui/               # Base UI components
+│   │   ├── tag.tsx       # Tag component
+│   │   └── index.ts      # UI exports
+│   ├── layout/           # Layout components
+│   ├── sections/         # Page sections
+│   │   ├── hero/         # Hero section
+│   │   ├── about/        # About section
+│   │   ├── experience/   # Experience section
+│   │   ├── projects/     # Projects section
+│   │   └── end-text/     # End text section
+│   └── providers/        # Context providers
+├── lib/                  # Utilities and data
+│   ├── data/            # Static data
+│   │   ├── personal-info.ts
+│   │   ├── experience.ts
+│   │   └── projects.ts
+│   ├── hooks/           # Custom hooks
+│   │   └── use-scroll-spy.ts
+│   └── utils.ts         # Utility functions
+└── styles/              # Global styles
+    └── globals.css
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 🛠️ Getting Started
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### Prerequisites
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- Node.js 18+
+- pnpm
 
-## Learn More
+### Installation
 
-To learn more about Next.js, take a look at the following resources:
+1. **Clone the repository**
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+   ```bash
+   git clone https://github.com/hnascx/nextjs-portfolio.git
+   cd nextjs-portfolio
+   ```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+2. **Install dependencies**
 
-## Deploy on Vercel
+   ```bash
+   pnpm install
+   ```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+3. **Run the development server**
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+   ```bash
+   pnpm dev
+   ```
+
+4. **Open your browser**
+   Navigate to [http://localhost:3000](http://localhost:3000)
+
+## 📝 Available Scripts
+
+- `pnpm dev` - Start development server with Turbopack
+- `pnpm build` - Build for production
+- `pnpm start` - Start production server
+- `pnpm lint` - Run ESLint
+
+## 🎨 Architecture Highlights
+
+### Component Architecture
+
+- **Modular Design** - Components organized by functionality
+- **Reusable UI** - Base components for consistency
+- **Section-based** - Logical separation of page sections
+
+### Data Management
+
+- **Centralized Data** - All static content in `/lib/data`
+- **Type Safety** - Full TypeScript coverage
+- **Easy Maintenance** - Simple data updates
+
+### Performance Features
+
+- **Image Optimization** - Next.js Image component with WebP/AVIF
+- **Lazy Loading** - Images load only when needed
+- **Code Splitting** - Automatic route-based code splitting
+- **Compression** - Built-in gzip compression
+
+### SEO & Accessibility
+
+- **Metadata API** - Dynamic meta tags
+- **Open Graph** - Social media optimization
+- **Semantic HTML** - Proper heading hierarchy
+- **ARIA Support** - Screen reader compatibility
+
+## 🔧 Configuration
+
+### Next.js Config
+
+- **Image Optimization** - Multiple formats and responsive sizes
+- **Security Headers** - X-Frame-Options, CSP, etc.
+- **Performance** - CSS optimization and compression
+
+### Tailwind CSS
+
+- **Custom Design System** - Consistent spacing, colors, and typography
+- **Responsive Utilities** - Mobile-first responsive design
+- **Custom Components** - Tailored component classes
+
+## 📱 Responsive Design
+
+- **Mobile First** - Designed for mobile devices first
+- **Breakpoints** - Responsive design across all screen sizes
+- **Touch Friendly** - Optimized for touch interactions
+
+## 🌐 Browser Support
+
+- **Modern Browsers** - Chrome, Firefox, Safari, Edge (latest versions)
+- **Progressive Enhancement** - Core functionality works everywhere
+- **CSS Grid & Flexbox** - Modern layout techniques
+
+## 📊 Performance
+
+- **Lighthouse Score** - Optimized for performance, accessibility and SEO
+- **Core Web Vitals** - Focus on LCP, FID and CLS
+- **Bundle Size** - Optimized JavaScript and CSS
+
+## 🤝 Contributing
+
+1. Fork the repository
+2. Create a feature branch (`git checkout -b feature/amazing-feature`)
+3. Commit your changes (`git commit -m 'Add amazing feature'`)
+4. Push to the branch (`git push origin feature/amazing-feature`)
+5. Open a Pull Request

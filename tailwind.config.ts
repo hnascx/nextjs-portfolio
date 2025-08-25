@@ -11,12 +11,10 @@ export default {
     },
     extend: {
       fontFamily: {
+        inter: ["var(--font-inter)", "sans-serif"],
         poppins: ["var(--font-poppins)", "sans-serif"],
       },
       colors: {
-        blue: {
-          900: "#0f172a",
-        },
         cyan: {
           100: "#5EEAD4",
           200: "#134E4A",
